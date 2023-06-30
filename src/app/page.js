@@ -1,5 +1,11 @@
+import Footer from "@/components/Footer"
+import Navbar from "@/components/Navbar"
+
 export default function Home() {
   return (
-    <h1>Hello Component</h1>
+    <>
+    <Navbar />
+    <Footer />
+    </>
   )
 }
