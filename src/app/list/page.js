@@ -1,3 +1,5 @@
+'use client';
+
 const list = () => {
     return ( 
         <h1>Hello this is the list</h1>
