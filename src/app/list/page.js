@@ -1,9 +1,15 @@
-'use client';
+import Content from "./Content";
+
+export const metadata = {
+  title: "People | List",
+};
 
 const list = () => {
-    return ( 
-        <h1>Hello this is the list</h1>
-     );
-}
- 
+  return (
+    <>
+      <Content />
+    </>
+  );
+};
+
 export default list;
