@@ -1,7 +1,7 @@
 "use client";
 
 import { use } from "react";
-import style from '@/app/people.module.css';
+import style from "@/app/people.module.css";
 
 const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -9,8 +9,9 @@ const getData = async () => {
   return { people };
 };
 
-const List = () => {
-  const { people } = use(getData());
+const List = async () => {
+  //   const { people } = use(getData());
+  const { people } = await getData();
   return (
     <>
       <h1>People List</h1>
