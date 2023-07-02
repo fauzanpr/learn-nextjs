@@ -2,6 +2,7 @@
 
 import { use } from "react";
 import style from "@/app/people.module.css";
+import Link from "next/link";
 
 const getData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
@@ -17,9 +18,9 @@ const List = async () => {
       <h1>People List</h1>
       {people.map((person) => {
         return (
-          <div className={style.single} key={person.id}>
-            <p>{person.name}</p>
-          </div>
+          <Link key={person.id} className={style.single} href={`list/${person.id.toString()}`}>
+            {person.name}
+          </Link>
         );
       })}
     </>

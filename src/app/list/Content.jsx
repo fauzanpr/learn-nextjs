@@ -23,7 +23,7 @@ const List = () => {
         people.map((person) => {
           return (
             <div className={style.single} key={person.id}>
-              <p>{person.name}</p>
+              <p href>{person.name}</p>
             </div>
           );
         })}
